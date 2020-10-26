@@ -36,7 +36,6 @@ const Stores = () => {
             }
         });
         setStores(areaMap);
-        console.log('stores state : ', stores)
     }
 
 
@@ -62,8 +61,12 @@ const Stores = () => {
                             <h2>צפון</h2>
                             <ul>
                                 {
-                                    stores.north.map(store => (
-                                        <li><a target="_blank" href={store.link === '' ? false : store.link}>{store.name}</a></li>
+                                    stores.north.map((store, index) => (
+                                         <li key={index}>
+                                            <a target="_blank"  rel="noreferrer" href={store.link === '' ? undefined : store.link} className={store.link === '' ? '' : 'store-link'}>
+                                                {store.name}
+                                            </a>
+                                        </li>
                                     ))
                                 }
                             </ul>
@@ -72,8 +75,12 @@ const Stores = () => {
                             <h2>מרכז</h2>
                             <ul>
                                 {
-                                    stores.center.map(store => (
-                                        <li><a target="_blank" href={store.link === '' ? false : store.link}>{store.name}</a></li>
+                                    stores.center.map((store, index) => (
+                                         <li key={index}>
+                                            <a target="_blank"  rel="noreferrer" href={store.link === '' ? undefined : store.link} className={store.link === '' ? '' : 'store-link'}>
+                                                {store.name}
+                                            </a>
+                                        </li>                                    
                                     ))
                                 }
                             </ul>
@@ -90,9 +97,13 @@ const Stores = () => {
                             <h2>דרום</h2>
                             <ul>
                                 {
-                                    stores.south.map(store => (
-                                        <li><a target="_blank" href={store.link === '' ? false : store.link}>{store.name}</a></li>
-                                    ))
+                                    stores.south.map( (store, index) => (
+                                         <li key={index}>
+                                            <a target="_blank"  rel="noreferrer" href={store.link === '' ? undefined : store.link} className={store.link === '' ? '' : 'store-link'}>
+                                                {store.name}
+                                            </a>
+                                        </li>                                    
+                                    ))        
                                 }
                             </ul>
                         </div>
@@ -100,8 +111,12 @@ const Stores = () => {
                             <h2>שפלה</h2>
                             <ul>
                                 {
-                                    stores.shfela.map(store => (
-                                        <li><a target="_blank" href={store.link === '' ? false : store.link}>{store.name}</a></li>
+                                    stores.shfela.map( (store, index) => (
+                                         <li key={index}>
+                                            <a target="_blank"  rel="noreferrer" href={store.link === '' ? undefined : store.link} className={store.link === '' ? '' : 'store-link'}>
+                                                {store.name}
+                                            </a>
+                                        </li>                                    
                                     ))
                                 }
                             </ul>

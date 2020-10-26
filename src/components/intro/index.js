@@ -1,6 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+import gsap from 'gsap';
 
 const Intro = () => {
+
+    useEffect(() => {
+        gsap.from('.intro', 0.6, {
+            delay: 1.8,
+            opacity: 0,
+            y: 25,
+            ease: 'Expo.easeInOut'
+        })
+    }, [])
+
     return (
         <section className="intro">
             <div className="bottle-imgs">

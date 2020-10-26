@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import About from './components/about';
 import Intro from './components/intro';
 import Stores from './components/stores';
@@ -9,24 +9,24 @@ import './styles/main.scss';
 
 
 const App = () => {
-  // const section = document.querySelector('section');
-  // let currentPos = window.pageYOffset;
+  
+  
+  function disableScroll() { 
+    window.onscroll = function() {
+       window.scrollTo(0, 0); 
+    }; 
+  } 
 
-  // const update = () => {
-  //   const newPos = window.pageYOffset;
-  //   const diff = newPos - currentPos;
-  //   const speed = diff * 0.35;
-  //   if (section)
-  //     section.style.transform = `skewY(${speed / 10}deg)`;
-
-  //   currentPos = newPos;
-
-  //   requestAnimationFrame(update);
-  // }
-
-  // update();
-
-
+   const  enableScroll = () => setTimeout(function() {
+                window.onscroll = function() { 
+               
+        } }, 3000 /* miliseconds */);
+      
+  
+  useEffect(()=> {
+    disableScroll();
+    enableScroll();
+  }, [])
 
   return (
     <div className="App">
