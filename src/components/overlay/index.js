@@ -5,7 +5,7 @@ const OverLay = () => {
     useEffect(() => {
         gsap.to('.overlay', 2, {
             delay: 1,
-            top: '-100%',
+            top: '-150%',
             ease: 'Expo.easeInOut',
         });
         gsap.to('.overlay', 0.2, {
