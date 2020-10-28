@@ -31,8 +31,13 @@ const About = () => {
                     בעל סיומת מרעננת.
                 </p>
                 <div className="about-logo scroll-effect"></div>
+            
+                
             </div>
-
+        <span className='koshers'>
+                    <div className="kosher-1"></div>
+                    <div className="kosher-2"></div>
+                </span>
         </section>
     )
 }

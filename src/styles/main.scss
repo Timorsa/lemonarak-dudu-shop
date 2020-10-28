@@ -2,6 +2,7 @@
 
 $breakpoint-tablet: 768px;
 
+
 * {
     margin: 0;
     padding: 0;
@@ -11,9 +12,7 @@ $breakpoint-tablet: 768px;
 }
 
 .App {
-    width: 100vw;
     scroll-snap-type: y mandatory;
-
     section {
         scroll-snap-align: start;
     }
@@ -55,6 +54,7 @@ $breakpoint-tablet: 768px;
     height: 100vh;
     width: 100vw;
     opacity: 1;
+    position: relative;
     .bottle-imgs{
         height: 65%;
         display: flex;
@@ -78,7 +78,6 @@ $breakpoint-tablet: 768px;
         background-position: center;
     }    
     .logo-desc{
-        font-family: 'Heebo';
         margin-top: 25px;
         font-size: 3.4rem;
         letter-spacing: -4px;
@@ -91,11 +90,9 @@ $breakpoint-tablet: 768px;
     .about{
         margin: 0  auto;
         min-height: 100vh;
-    
         display: flex;
         align-items: center;
-              //  background: rgba(254, 246, 169, 0.8);
-
+        flex-direction: column;
         .content{
             margin: 4rem auto;
             width: 80%;
@@ -104,12 +101,11 @@ $breakpoint-tablet: 768px;
                 font-size: 2.9rem;
                 letter-spacing: -4px;
                 font-weight: 800;
-                // display: none;
             }
             .name-2{
-                 font-size: 2rem;
+                font-size: 2rem;
                 letter-spacing: -2px;
-                                font-weight: 800;
+                font-weight: 800;
 
             }
             .item-desc{
@@ -120,6 +116,7 @@ $breakpoint-tablet: 768px;
                 font-size: 1.1rem;
                 font-weight: 600;
             }
+
             .about-logo{
                 margin-bottom: 1.4rem;
                 height: 8vh;
@@ -130,53 +127,89 @@ $breakpoint-tablet: 768px;
 
             }
         }
+          .koshers{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2rem;
+                .kosher-1{
+                    width: 8rem;
+                    height: 3.5rem;
+                    background-image: url('../assets/Kosher1.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                .kosher-2{
+                    width: 8rem;
+                    height: 3.5rem;
+                    background-image: url('../assets/Kosher2.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+
     }
+    
 
     .stores{
         
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        min-height: 100vh;
+        justify-content: start;
+        // min-height: 100vh;
         width: 100vw;
         background: rgba(254, 246, 169, 0.8);
-        .stores-row{
-            width: 100vw;
-            display: flex;
-            flex-direction: row;
-           justify-content: center;
+        text-align: center;
+        h2{
+            font-size: 2.3em;
+            font-weight: 800;
+            letter-spacing: -2px;
+        }
 
+        ul{
+            margin: 0.5rem;
         }
-        .stores-area{
-            text-align: center;
-            padding: 5vw;
-            h2{
-                font-size: 2.3em;
-                font-weight: 800;
-                
-            }
+
+        li{
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
      
-                li{
-                    font-size: 1.6rem;
-                    font-weight: 500;
-                    list-style: none;
-                    a{
-                        color: #000;
-                        text-decoration: none
-                    }
-                    .store-link {
-                        font-weight: 800;
-                    }
-                }
            
-        }
         .alter-logo{
-            margin: 5vh 0;
+            margin: 2rem 0;
             height: 30vh;
             background-image: url('../assets/logo-icon.svg');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
+        }
+    }
+
+    .footer{
+        padding: 10px;
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+        .warning{
+            padding: 1rem;
+            font-size: 1.4rem;
+            border: 3px solid  rgba(254, 246, 169, 0.8);
+        }
+        .end-footer{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem 1rem .5rem ;
+            .caspirits{
+                color: #fff;
+                text-decoration: none;
+                letter-spacing: 0.2rem;
+          
+            }
         }
     }
 
@@ -187,23 +220,99 @@ $breakpoint-tablet: 768px;
         .bg{
             background-image: url('../assets/BG1-desktop.jpg');
         }
-         .stores{
-            min-height: 100vh;
-            .stores-row{
-            margin: 25px auto;
-            width: 80vw;
-            justify-content: space-around;
-
+        .intro{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .bottle-imgs{
+                position: relative;
+                right: 5vh;
+                height: 85%;
+                .img-c{
+                    height:100%;
+                    width: 70vh;
+                }
             }
-        .stores-area{
-            padding: 0;
+            span {
+                position: relative;
+                right: 5vh;
+                width: 15vw;
+                display: flex;
+                direction: row;
+                flex-wrap: wrap;
+                text-align: center;
+                .logo{
+                    width: 100%;
+                    height: 20vh;
+                    margin: 0;
+                }
+                .logo-desc{
+                    margin:0;
+                    width: 100%;
+                }
+            }
         }
+        .about{
+            min-height: 50vh;
+            .content{
+                .name-1{
+                    font-size: 3.2rem;
+                }
+                .name-2{
+                    font-size: 2.4rem;
+                }
+                .item-desc{
+                    font-size: 2rem;
+                }
+                p{
+                    font-size: 1.6rem;
+                }
+                .about-logo{
+                    height: 10vh;
+                }
+            }
+             .koshers{
+                align-self: flex-end;
+                display: flex;
+                align-items: center;
+                justify-content: start;
+                margin-bottom: 1rem;
+                // position: absolute;
+                .kosher-1{
+                    width: 10rem;
+                    height: 5rem;
+                    background-image: url('../assets/Kosher1.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+                .kosher-2{
+                    width: 10rem;
+                    height: 5rem;
+                    background-image: url('../assets/Kosher2.svg');
+                    background-position: center;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        .stores{
+            min-height: 100vh;
+            ul {
+                margin: 2.5rem auto;
+                width: 60%;
+                columns: 2;
+                -webkit-columns: 2;
+                -moz-columns: 2;
+                li{
+                    font-size: 1.7rem;
+                    font-weight: 700;
+                    margin-bottom: 10px;               
+                }
+            }
         .alter-logo{
-            // margin: 1.5vh 0;
             height: 35vh;
         }
-    }
-
-
+        }
     }
 }
