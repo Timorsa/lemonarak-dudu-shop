@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Tabletop from "tabletop";
 
-//https://docs.google.com/spreadsheets/d/e/2PACX-1vSXrrfs1ZqQvWgFqUebSuU5yxA07T8_Ny2lyW7nN8tmPMz9lBcyYwC5-rJtWXnd9tPN90VVqDPkxo8o/pubhtml
-//2PACX-1vSXrrfs1ZqQvWgFqUebSuU5yxA07T8_Ny2lyW7nN8tmPMz9lBcyYwC5-rJtWXnd9tPN90VVqDPkxo8o
+
 const Stores = () => {
     const [stores, setStores] = useState([])
 
@@ -13,7 +12,7 @@ const Stores = () => {
 
     useEffect(() => {
         Tabletop.init({
-            key: "1qhNC-VMkSoHCZWKqBDOqQOhaRaFfLjhIW8ktCK9FTIQ",
+            key: "1KnNwhfFuu37LPFP5q1ZHtK_Wwhqk_aS8jGwYC2SV3dA",
             simpleSheet: true
         })
             .then((data) => setStores(data))
@@ -29,7 +28,7 @@ const Stores = () => {
            </h2>
             <ul dir='rtl'>
                 {
-                    stores.map(store => <li key={store.name}>{store.name}</li>)
+                    stores.map(store => <li key={store.Name}>{store.Name}</li>)
                 }
             </ul>
         </section>
