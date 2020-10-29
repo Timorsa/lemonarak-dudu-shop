@@ -24,7 +24,9 @@ const Stores = () => {
     return (
         <section className='stores'>
             <div className="alter-logo"></div>
-            <h2>ניתן להשיג בחנויות מובחרות</h2>
+            <h2 dir='rtl'>
+                ניתן להשיג בחנויות מובחרות ביניהן:
+           </h2>
             <ul dir='rtl'>
                 {
                     stores.map(store => <li key={store.name}>{store.name}</li>)
@@ -35,3 +37,4 @@ const Stores = () => {
 }
 
 export default Stores
+
