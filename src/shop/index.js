@@ -24,7 +24,8 @@ const ShopAddon = () => {
       {
         openCart && <Cart cartItems={cartItems} setCartItems={setCartItems} setOpenCart={setOpenCart}  cartMode={cartMode} setCartMode={setCartMode}/>
       }
-      <div style={{overflow: 'hidden'}}>
+      <div 
+      >
 
       <Header setOpenCart={setOpenCart} />
       <Shop cartItems={cartItems} setCartItems={setCartItems} setOpenCart={setOpenCart} setCartMode={setCartMode} />
