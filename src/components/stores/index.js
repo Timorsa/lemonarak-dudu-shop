@@ -24,13 +24,8 @@ const Stores = () => {
         <section className='stores'>
             <div className="alter-logo"></div>
             <h2 dir='rtl'>
-                ניתן להשיג בחנויות מובחרות ביניהן:
+                ניתן להשיג בחנויות מובחרות 
            </h2>
-            <ul dir='rtl'>
-                {
-                    stores.map(store => <li key={store.Name}>{store.Name}</li>)
-                }
-            </ul>
         </section>
     )
 }

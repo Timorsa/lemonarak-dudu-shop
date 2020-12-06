@@ -1,16 +1,6 @@
 import React from 'react'
-import ScrollReveal from 'scrollreveal'
 
 const About = () => {
-
-    window.sr = ScrollReveal();
-    window.sr.reveal('.scroll-effect', {
-        origin: 'left',
-        duration: 1000,
-        distance: '35rem',
-        delay: 600,
-        
-    });
 
     return (
         <section className="about">
