@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import gsap from 'gsap';
 
 const Intro = () => {
@@ -22,7 +23,9 @@ const Intro = () => {
                 <h1 className="logo-desc">
                     לימונערק דודו
                 </h1>
-                <button className='btn'>לרכישה</button>
+                <Link to='/shop' className='btn'>
+                     לרכישה
+                </Link>
             </span>
                 
         </section>

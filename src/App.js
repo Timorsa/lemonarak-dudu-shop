@@ -51,12 +51,12 @@ const App = () => {
         <Router>
     <div className="App">
           <Switch>
-            <Route path='/'>
+            <Route path='/' exact>
               <LandingPage/>
             </Route>
-            <Route path exact='/shop'>
+            <Route path='/shop' >
+              <ShopAddon/>
             </Route>
-            <ShopAddon/>
           </Switch>
         <Footer />
     </div>

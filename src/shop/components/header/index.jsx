@@ -1,6 +1,9 @@
 import React from 'react';
 import gsap from 'gsap';
 import { GrPrevious as Prev, GrCart as Cart } from 'react-icons/gr'
+import {
+    Link
+} from 'react-router-dom'
 
 
 const Header = ({ setOpenCart }) => {
@@ -16,9 +19,9 @@ const Header = ({ setOpenCart }) => {
 
     return (
         <div className="header">
-            <div className="btn-icn btn-back">
+            <Link  to='/' className="btn-icn btn-back">
                 <Prev size={15} />
-            </div>
+            </Link>
             <div className="st-hd-logo"></div>
             <div className="btn-icn btn-crt" onClick={() => openCart()}>
                 <Cart size={22} />

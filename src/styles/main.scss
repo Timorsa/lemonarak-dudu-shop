@@ -6,16 +6,16 @@ $breakpoint-tablet: 992px;
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    // box-sizing: border-box;
     font-family: 'Heebo', sans-serif;
     overflow-x: hidden;
 }
 
 .App {
     scroll-snap-type: y mandatory;
-    section {
-        scroll-snap-align: start;
-    }
+    // section {
+    //     scroll-snap-align: start;
+    // }
 
     .bg{
         position: fixed;
@@ -55,20 +55,22 @@ $breakpoint-tablet: 992px;
     width: 100vw;
     opacity: 1;
     position: relative;
-    
+ 
     .btn{
+        display:block;
+        text-align: center;
         width: 100%;
-  
-
-        background: transparent;
+        text-decoration: none;
+        border: 1px black solid;
+        color: black;
+        font-weight: 800;
         font-size: 1.4rem;
-        padding: 1rem;
-        transition: all  .4s ease-in-out;
-        cursor: pointer;
-        &:hover{
-            color: #fff;
+        padding: 1rem 0;
+           color: #fff;
             background: #000;
-        }
+        
+        transition: all  .4s ease-in-out;
+    
     }
 
     .bottle-imgs{
@@ -237,15 +239,16 @@ $breakpoint-tablet: 992px;
         }
         .end-footer{
             display: flex;
-            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-wrap: wrap;
             align-items: center;
             justify-content: space-between;
-            padding: 1rem 1rem .5rem ;
+            padding: .5rem .5rem .5rem ;
             .caspirits{
                 color: #fff;
                 text-decoration: none;
                 letter-spacing: 0.2rem;
-          
+                margin-top: .4rem;
             }
         }
     }
@@ -269,6 +272,16 @@ $breakpoint-tablet: 992px;
                     height:100%;
                     width: 70vh;
                 }
+            }
+            .btn{
+                width: 100%;
+                background: transparent;
+                color: black;
+                    cursor: pointer;
+        &:hover{
+            color: #fff;
+            background: #000;
+        }
             }
             span {
                 position: relative;
