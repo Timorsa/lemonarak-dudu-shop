@@ -19,7 +19,7 @@ const ShopAddon = () => {
    const [cartMode, setCartMode] = useState('CART');
 
   return (
-    <div className="App">
+    <div >
     <ShopOverlay/>
       {
         true && <Cart cartItems={cartItems} setCartItems={setCartItems} setOpenCart={setOpenCart}  cartMode={cartMode} setCartMode={setCartMode}/>

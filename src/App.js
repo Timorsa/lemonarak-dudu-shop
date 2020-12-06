@@ -11,6 +11,8 @@ import Footer from './components/footer';
 import Stores from './components/stores';
 import Overlay from './components/overlay';
 
+// shop import
+import ShopAddon from './shop';
 import './styles/main.scss';
 
 
@@ -54,7 +56,7 @@ const App = () => {
             </Route>
             <Route path exact='/shop'>
             </Route>
-
+            <ShopAddon/>
           </Switch>
         <Footer />
     </div>
