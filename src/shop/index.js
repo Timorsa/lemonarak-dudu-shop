@@ -22,11 +22,13 @@ const ShopAddon = () => {
     <div >
     <ShopOverlay/>
       {
-        true && <Cart cartItems={cartItems} setCartItems={setCartItems} setOpenCart={setOpenCart}  cartMode={cartMode} setCartMode={setCartMode}/>
+        openCart && <Cart cartItems={cartItems} setCartItems={setCartItems} setOpenCart={setOpenCart}  cartMode={cartMode} setCartMode={setCartMode}/>
       }
+      <div style={{overflow: 'hidden'}}>
+
       <Header setOpenCart={setOpenCart} />
       <Shop cartItems={cartItems} setCartItems={setCartItems} setOpenCart={setOpenCart} setCartMode={setCartMode} />
-   
+      </div>
     </div>
   );
 }

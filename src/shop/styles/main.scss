@@ -189,6 +189,7 @@
 .cart {
     overflow: hidden;
     position: fixed;
+    z-index: 100;
     right: -100%;
     opacity: 0;
     top: 0;
@@ -424,9 +425,14 @@ input:first-of-type{
             }
         }
     }
+    .header{
+        height: 50px;
+        padding: 10px;
+    }
     .cart{
         width: 100vw;
-            overflow: scroll;
+        overflow: scroll;
+        display: block;
         .cart-item{
             width: 100%;
         }
