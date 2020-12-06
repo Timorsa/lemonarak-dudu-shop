@@ -1,4 +1,10 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+
 import About from './components/about';
 import Intro from './components/intro';
 import Footer from './components/footer';
@@ -12,6 +18,16 @@ import './styles/main.scss';
 const App = () => {
 
 
+  const LandingPage = () => (
+    <>
+      <Overlay />
+      <div className="bg"></div>
+      <Intro />
+      <About />
+      <Stores />
+      
+    </>
+  )
   function disableScroll() {
     window.onscroll = function () {
       window.scrollTo(0, 0);
@@ -30,14 +46,19 @@ const App = () => {
   }, [])
 
   return (
+        <Router>
     <div className="App">
-      <Overlay />
-      <div className="bg"></div>
-      <Intro />
-      <About />
-      <Stores />
-      <Footer />
+          <Switch>
+            <Route path='/'>
+              <LandingPage/>
+            </Route>
+            <Route path exact='/shop'>
+            </Route>
+
+          </Switch>
+        <Footer />
     </div>
+        </Router>
   );
 }
 

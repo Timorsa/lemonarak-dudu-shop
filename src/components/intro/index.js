@@ -18,11 +18,11 @@ const Intro = () => {
                 <div className="img-c"></div>
             </div>
             <span>
-
                 <div className="logo"></div>
                 <h1 className="logo-desc">
                     לימונערק דודו
                 </h1>
+                <button className='btn'>לרכישה</button>
             </span>
                 
         </section>

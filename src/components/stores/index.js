@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Tabletop from "tabletop";
 
 
 const Stores = () => {
-    const [stores, setStores] = useState([])
 
 
 
@@ -11,12 +9,7 @@ const Stores = () => {
 
 
     useEffect(() => {
-        Tabletop.init({
-            key: "1KnNwhfFuu37LPFP5q1ZHtK_Wwhqk_aS8jGwYC2SV3dA",
-            simpleSheet: true
-        })
-            .then((data) => setStores(data))
-            .catch((err) => console.warn(err));
+   
     }, []);
 
 
