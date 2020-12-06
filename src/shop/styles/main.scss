@@ -188,7 +188,7 @@
 
 .cart {
     overflow: hidden;
-    position: fixed;
+     position: absolute;
     z-index: 100;
     right: -100%;
     opacity: 0;
@@ -383,9 +383,9 @@ input:first-of-type{
         bottom: 0;
         outline: none;
         cursor: pointer;
-        &:hover{
-            transform: scale(1.08);
-        }
+        // &:hover{
+        //     transform: scale(1.08);
+        // }
     }
 }
 
