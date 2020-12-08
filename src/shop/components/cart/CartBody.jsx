@@ -6,35 +6,6 @@ import CreditCardForm from './cartBodyComps/CreditCardForm'
 import Confermation from './cartBodyComps/Confermation';
 
 
-    const buttonText = (cartMode) => {
-    switch (cartMode) {
-        case 'CART':
-            return 'המשך לפרטי משלוח'
-        case 'ADDRESS':
-            return 'המשך לתשלום'
-        case 'PAYMENT':
-            return 'אישור תשלום'
-        case 'CONFERMATION':
-            return 'פעולה בוצעה בהצלחה';
-        default:
-            return '';
-    }
-}
-
-const buttonSetValue = (cartMode) => {
-    switch (cartMode) {
-        case 'CART':
-            return 'ADDRESS' 
-       case 'ADDRESS':
-            return 'PAYMENT'
-        case 'PAYMENT':
-            return 'CONFORMATION'
-        case 'CONFORMATION':
-            return '';
-        default:
-            return '';
-    }
-}
 
 
 const CartBody = ({paymentDetails, setPaymentDetails, address, setAddress, cartMode, setCartMode, cartItems, setCartItems}) => {

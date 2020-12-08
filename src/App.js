@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,10 +27,10 @@ const App = () => {
     };
   }
   
-  const enableScroll = () => {
-    window.onscroll = function () {
-    }
-  };
+  // const enableScroll = () => {
+  //   window.onscroll = function () {
+  //   }
+  // };
   
   
     const LandingPage = () => (

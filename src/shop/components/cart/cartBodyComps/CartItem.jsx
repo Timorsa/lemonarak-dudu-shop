@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import gsap from 'gsap';
+import React from 'react';
 
 import { GrFormSubtract as Minus, GrFormAdd as Plus } from 'react-icons/gr';
 

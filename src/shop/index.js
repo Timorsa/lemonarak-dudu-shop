@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Shop from './components/shop';
 import Cart from './components/cart';
 import Header from './components/header';
-import Footer from './components/footer';
 import ShopOverlay from './components/ShopOverlay'
 
 import './styles/shop.scss';

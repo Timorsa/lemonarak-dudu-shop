@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import gsap from 'gsap';
+import React, { useState } from 'react';
 
-import CartItem from './cartBodyComps/CartItem';
+
 
 
 import CartHeader from './CartHeader';
