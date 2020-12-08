@@ -50,6 +50,55 @@ $breakpoint-tablet: 992px;
         }
     }
     
+    .modal-warning{
+        position: absolute;
+        z-index: 100;
+        width: 100vw;
+        height: 100vh;
+        background-color: #00000070;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        cursor: no-drop;
+        .content-mw{
+            cursor: default;
+            padding: 1.5rem ;
+            padding-bottom: 15vh;
+            text-align: center;
+            // width:80vw;
+            background-color: #ffffff;
+            
+            h1{
+                font-size: 1.2rem;
+                text-align: center;
+            }
+            h2{
+                font-size: .8rem;
+            }
+            .buttons{
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 1rem;
+                font-size: 1.2rem;
+                cursor: pointer;
+                
+            }
+            .btn{
+                text-decoration: none;
+                color: #000;
+                font-weight: 800;
+                padding: .4rem 1.8rem;
+                border-radius: .4rem;
+                border: .1rem #00000085 solid;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: #fff;
+                    background-color: #000;
+                }
+            }
+        }
+    }
 .intro{
     min-height: 100vh;
     width: 100vw;
@@ -259,6 +308,11 @@ $breakpoint-tablet: 992px;
     .App{
         .bg{
             background-image: url('../assets/BG1-desktop.jpg');
+        }
+        .modal-warning{
+            .content-mw{
+                padding-bottom: 5vh;
+            }
         }
         .intro{
             display: flex;

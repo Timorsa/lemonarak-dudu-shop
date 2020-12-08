@@ -20,39 +20,39 @@ import './styles/main.scss';
 
 const App = () => {
 
-
-  const LandingPage = () => (
-    <>
-      <Overlay />
-      <div className="bg"></div>
-      <ModalWarning />
-      <Intro />
-      <About />
-      <Stores />
-      
-    </>
-  )
-
+  
   function disableScroll() {
     window.onscroll = function () {
       window.scrollTo(0, 0);
     };
   }
-
-  const enableScroll = () => setTimeout(function () {
+  
+  const enableScroll = () => {
     window.onscroll = function () {
     }
-  }, 3000 /* miliseconds */);
-
-
-  useEffect(() => {
-    disableScroll();
-    enableScroll();
-  }, [])
-
-  return (
-        <Router>
+  };
+  
+  
+    const LandingPage = () => (
+      <>
+        <Overlay />
+        <div className="bg"></div>
+        <Intro />
+        <About />
+        <Stores />
+        
+      </>
+    )
+    
+    useEffect(() => {
+      disableScroll();
+      //enableScroll();
+    }, [])
+    
+    return (
+      <Router>
     <div className="App">
+      <ModalWarning />
           <Switch>
             <Route path='/' exact >
               <LandingPage/>
