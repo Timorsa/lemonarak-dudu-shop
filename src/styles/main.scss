@@ -109,7 +109,7 @@ $breakpoint-tablet: 992px;
     .btn{
         display:block;
         text-align: center;
-        width: 100%;
+        width: 80%;
         text-decoration: none;
         border: 1px black solid;
         color: black;
@@ -119,17 +119,19 @@ $breakpoint-tablet: 992px;
         color: #fff;
         background: #000;        
         transition: all  .4s ease-in-out;
+        margin: 2rem auto;
+        //margin-top: 2rem;
     
     }
 
     .bottle-imgs{
-        height: 65vh;
+        height: 55vh;
         display: flex;
         align-items: center;
         justify-items: center;
         flex-direction: row;
         .img-c{
-            height: 52vh;
+            height: 45vh;
             width: 100vw;
             background-image: url('../assets/compressed-bottle-images/3bt-shadow.png');
             background-size: contain;
@@ -138,20 +140,22 @@ $breakpoint-tablet: 992px;
         }
     }
     .logo{
-        height: 13%;
+        height: 13vh;
         background-image: url('../assets/Logo.svg');
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
+        margin-bottom: 1rem;
     }    
     .logo-desc{
-        margin-top: 25px;
-        font-size: 3.4rem;
+        //  display: none;
+        font-size: 2rem;
         letter-spacing: -1px;
         text-align: center;
         font-weight: 800;
         width: 250px;
         margin: 0 auto;
+        margin-bottom: 25px;
         
     }
 
@@ -326,6 +330,9 @@ $breakpoint-tablet: 992px;
                     height:100%;
                     width: 70vh;
                 }
+            }
+            .logo-desc{
+                display: block;
             }
             .btn{
                 width: 100%;

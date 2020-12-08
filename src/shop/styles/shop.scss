@@ -1,6 +1,14 @@
 
 
-
+.rccs{
+    *{
+        overflow: hidden;
+        
+    }
+    .rccs__number{
+        direction: ltr
+    }
+}
 .App{
     // height: 100vh;
     // overflow: hidden;
@@ -431,22 +439,34 @@ input:first-of-type{
     }
     .cart{
         width: 100vw;
+        min-height: 125vh;
         overflow: scroll;
         display: block;
+       
         .cart-item{
             width: 100%;
         }
 
         .addressForm {
+            padding: 2rem;
             .proceed-payment-btn{
                 margin-top: 25px;
                 position: relative;
+                margin-bottom: 20vh;
+
             }
         }
     .credit-card-form{
+        // height: 100vh;
+       
+        .rccs{
+            margin-bottom: 1rem;
+        }
+        // padding-bottom: 20vh
   .proceed-payment-btn{
                 margin-top: 25px;
                 position: relative;
+
             }
     }
     }

@@ -87,7 +87,7 @@ const CreditCardForm = ({cartItems, paymentDetails , setCartMode , setPaymentDet
              onFocus={(e) => setFocuseItem(e.target.name)}
           />
         	<input
-            type="tel"
+            type="number"
             name="number"
                         required
 
@@ -109,10 +109,10 @@ const CreditCardForm = ({cartItems, paymentDetails , setCartMode , setPaymentDet
             minLength='3'
             maxLength='4'
             onChange={(e) => setCvc(e.target.value)}
-            onFocus={(e) => setFocuseItem(e.target.name)}
+          //  onFocus={(e) => setFocuseItem(e.target.name)}
           />
          	<input
-            type="text"
+            type="number"
             name="expiry"
             value={mm}
                         required
@@ -120,11 +120,12 @@ const CreditCardForm = ({cartItems, paymentDetails , setCartMode , setPaymentDet
             minLength='2'
             maxLength='2'
             placeholder="MM"
+            
             onChange={(e) => setMM(e.target.value)}
             onFocus={(e) => setFocuseItem(e.target.name)}
           />
         	<input
-            type="text"
+            type="number"
             name="expiry"
             value={yy}
                         required
