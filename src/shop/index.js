@@ -17,6 +17,8 @@ const ShopAddon = () => {
    // enum : CART , ADDRESS, PAYMENT, CONFORMATION
    const [cartMode, setCartMode] = useState('CART');
 
+  openCart && console.log('cart!');
+
   return (
     <div >
     <ShopOverlay/>

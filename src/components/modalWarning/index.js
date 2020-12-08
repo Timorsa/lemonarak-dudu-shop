@@ -43,7 +43,7 @@ const ModalWarning = () => {
                 <h1>סבא דודו שואל אם עברת כבר ח"י שנים?</h1>
                 {/* <h2>האם גילך הוא מעל 18 ?</h2> */}
                 <div className='buttons'>
-                    <a className='yes btn' onClick={()=> closeDialog()}>כן</a>
+                    <div className='yes btn' onClick={()=> closeDialog()}>כן</div>
                     <a className='no btn' href='http://google.com/'>לא</a>
                 </div>
                 <h2>*ומזכיר שהמכירה היא לבני 18+ בלבד</h2>
