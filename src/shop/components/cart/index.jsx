@@ -11,11 +11,6 @@ import CartBody from './CartBody';
 
 
 
-
-
-
-
-
 const Cart = ({ cartItems, setCartItems, setOpenCart, cartMode, setCartMode }) => {
    
     const [address, setAddress] = useState({});

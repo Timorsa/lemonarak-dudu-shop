@@ -16,9 +16,12 @@ const Stores = () => {
     return (
         <section className='stores'>
             <div className="alter-logo"></div>
+            <div className="under-logo">
+
             <h2 dir='rtl'>
-                ניתן להשיג בחנויות מובחרות 
+                 להשיג בחנויות מובחרות 
            </h2>
+            </div>
         </section>
     )
 }

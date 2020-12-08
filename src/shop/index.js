@@ -6,7 +6,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import ShopOverlay from './components/ShopOverlay'
 
-import './styles/main.scss';
+import './styles/shop.scss';
 
 
 // ! add overlay

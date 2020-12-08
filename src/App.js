@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,6 +10,7 @@ import Intro from './components/intro';
 import Footer from './components/footer';
 import Stores from './components/stores';
 import Overlay from './components/overlay';
+import ModalWarning from './components/modalWarning';
 
 // shop import
 import ShopAddon from './shop';
@@ -24,12 +25,14 @@ const App = () => {
     <>
       <Overlay />
       <div className="bg"></div>
+      <ModalWarning />
       <Intro />
       <About />
       <Stores />
       
     </>
   )
+
   function disableScroll() {
     window.onscroll = function () {
       window.scrollTo(0, 0);
@@ -51,7 +54,7 @@ const App = () => {
         <Router>
     <div className="App">
           <Switch>
-            <Route path='/' exact>
+            <Route path='/' exact >
               <LandingPage/>
             </Route>
             <Route path='/shop' >
