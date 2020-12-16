@@ -138,6 +138,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                text-align: center;
                 div{
                     // margin: .2rem
                 }
@@ -167,13 +168,15 @@
                     font-weight: 600;
                     padding-right: .5rem;
                     margin: .2rem;
+                    text-align: center;
 
                 }
                 .add-btn{
                     background: #ECE655;
                   //  background: linear-gradient(292deg, rgba(250,254,207,1) 22%, rgba(241,231,34,1) 85%);
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     padding: .8rem .5rem;
+                    font-weight: 600;
                     display: inline;
                     text-align: center;
                     cursor: pointer;
@@ -197,7 +200,6 @@
 .cart {
     overflow: hidden;
      position: absolute;
-    z-index: 100;
     right: -100%;
     opacity: 0;
     top: 0;
@@ -440,9 +442,10 @@ input:first-of-type{
     .cart{
         width: 100vw;
         min-height: 125vh;
+        height: 100vh;
         overflow: scroll;
         display: block;
-       
+    
         .cart-item{
             width: 100%;
         }
@@ -458,6 +461,9 @@ input:first-of-type{
         }
     .credit-card-form{
         // height: 100vh;
+        .card{
+            display: none;
+        }
        
         .rccs{
             margin-bottom: 1rem;

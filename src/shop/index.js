@@ -8,7 +8,6 @@ import ShopOverlay from './components/ShopOverlay'
 import './styles/shop.scss';
 
 
-// ! add overlay
 
 const ShopAddon = () => {
 

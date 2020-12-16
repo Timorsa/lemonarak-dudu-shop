@@ -17,7 +17,7 @@ const ListedItem = ({ listItem, addToCart }) => {
                     <div className="desc">{desc}</div>
                     <div className="price">{`${price} ש''ח`}</div>
                 </div>
-                <div className="add-btn" role='button' onClick={() => addToCart(listItem)}> הוסף לסל <span>+</span></div>
+                <div className="add-btn" role='button' onClick={() => addToCart(listItem)}>רכישה</div>
             </div>
 
         </div>

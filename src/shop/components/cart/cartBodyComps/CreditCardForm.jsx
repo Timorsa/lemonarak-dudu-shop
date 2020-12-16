@@ -57,6 +57,8 @@ const CreditCardForm = ({cartItems, paymentDetails , setCartMode , setPaymentDet
       setPayDetail();
     }}        
         >
+        <div className="card">
+
          <Cards
           cvc={cvc}
           expiry={`${mm+"/"+ yy}`}
@@ -64,6 +66,7 @@ const CreditCardForm = ({cartItems, paymentDetails , setCartMode , setPaymentDet
           name={ name}
           number={ number}
         />
+        </div>
       
           <input
             type="text"
@@ -104,7 +107,7 @@ const CreditCardForm = ({cartItems, paymentDetails , setCartMode , setPaymentDet
             name="cvc"
                         required
 
-            placeholder="CVV"
+            placeholder="CVV/CVC"
             value={cvc}
             minLength='3'
             maxLength='4'
