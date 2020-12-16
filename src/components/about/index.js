@@ -5,7 +5,8 @@ const About = () => {
     return (
         <section className="about">
             <div className="content" dir='rtl'>
-                <h2 className="name-1 scroll-effect">לימונערק דודו</h2>
+            
+                <h2 className="name-1 scroll-effect">לימונערק <span>דודו</span>  </h2>
                 <h2 className="name-2 scroll-effect">LEMONARAK DUDU</h2>
                 <h3 className="item-desc scroll-effect">ערק בתוספת מיץ לימונים טבעי, ישראל, 16% אלכוהול, כשר.</h3>
                 <p className="scroll-effect">
