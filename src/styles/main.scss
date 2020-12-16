@@ -94,7 +94,17 @@ $breakpoint-tablet: 992px;
                 transition: all .4s ease-in-out;
                 &:hover{
                     color: #fff;
+ 
                     background-color: #000;
+                }
+            }
+            .yes{
+                &:hover{
+                    border: .1rem #FBF67F solid;
+                    border: none;
+                    color: #000;
+                    background: #FBF67F;
+
                 }
             }
         }
@@ -314,8 +324,28 @@ $breakpoint-tablet: 992px;
             background-image: url('../assets/BG1-desktop.jpg');
         }
         .modal-warning{
+            align-items: center;
+            background-color: #000000a4;
             .content-mw{
+                // width: 35vw;
+                padding: 2rem 5rem  ;
                 padding-bottom: 5vh;
+                border-radius: 1rem;
+                .buttons{
+                    justify-content: center;
+                }
+                h1{
+                    font-size: 2rem;
+                    margin: 1rem
+                }
+                h2{
+                    font-size: 1.2rem;
+                }
+                .btn{
+                    margin: 0 2rem;
+                    font-size: 1.8rem;
+                    padding: .4rem 2.5rem;
+                }
             }
         }
         .intro{
